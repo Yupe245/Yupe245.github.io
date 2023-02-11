@@ -20,5 +20,6 @@ app.use("/public", express.static(path.join(__dirname, "./src/public")));
 // <-> Middlewares <-> \\
 
 app.get("/snake", async(req, res) => res.render("snake"));
+app.get("/", async(req, res) => res.send("Endpoints;\n/snake"));
 
 app.listen(config.port, () => console.log("server started"));
