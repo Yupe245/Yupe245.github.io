@@ -181,11 +181,6 @@ function loop() {
             state.snake.y = 0;
         };
 
-        console.log("snake", state.snake);
-
-        // gameOver();
-        //  ||  || state.snake.y < 0 || 
-
         if (state.gameOver) {
             new Text("Game Over!", canvas.width / 2, canvas.height / 2 - 20, "center", 50).draw();
             new Text("Click to restart Game", canvas.width / 2, canvas.height / 2 + 20, "center", 40).draw();
