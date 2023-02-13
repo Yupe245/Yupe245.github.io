@@ -48,7 +48,7 @@ class Apple {
 
     draw() {
         const img = new Image();
-        img.src = "http://localhost:8080/public/apple.png";
+        img.src = "apple.png";
         ctx.drawImage(img, this.x + 5, this.y + 4);
     };
 };
