@@ -167,17 +167,17 @@ function loop() {
             new Square(state.tail[i][0], state.tail[i][1], state.size, state.size, "green").draw();
         };
 
-        if (state.snake.x < 0) {
+        if (state.snake.x <= 0) {
             state.snake.x = state.cols * state.size;
         };
-        if (state.snake.x > state.cols * state.size) {
+        if (state.snake.x >= state.cols * state.size) {
             state.snake.x = 0;
         };
 
-        if (state.snake.y < 0) {
+        if (state.snake.y <= 0) {
             state.snake.y = state.rows * state.size;
         };
-        if (state.snake.y > state.rows * state.size + 10) {
+        if (state.snake.y >= state.rows * state.size) {
             state.snake.y = 0;
         };
 
